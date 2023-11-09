@@ -1,0 +1,59 @@
+modules:
+  prefix: "&b&lAquafly &8»"
+
+bungee:
+  simulator:
+    list:
+      - "world"
+      - "lobby"
+      - "spawn"
+
+styles:
+  default:
+    switch: true
+    permission: aquafly.default
+    simulator:
+      switch: true
+
+  levitation:
+    switch: false
+    number: 5
+    permission: aquafly.levitation
+    simulator:
+      switch: false
+
+  jumped:
+    switch: false
+    permission: aquafly.jumped
+    simulator:
+      switch: false
+
+  vector:
+    switch: false
+    permission: aquafly.vector
+    simulator:
+      switch: false
+
+aquafly:
+  enabled:
+    switch: true
+    title: "&b&lAquafly"
+    subtitle: "&fFlight mode &aEnabled"
+    sound: ENTITY_PLAYER_LEVELUP
+  disabled:
+    switch: true
+    title: "&b&lAquafly"
+    subtitle: "&fFlight mode &cDisabled"
+  permission:
+    switch: true
+    title: "&b&lAquafly"
+    subtitle: "&cYou don't have permissions"
+    sound: BLOCK_LAVA_POP
+
+messages:
+  enabled: "%prefix% &fYour flight mode has been &aActivated"
+  disabled: "%prefix% &fYour flight mode has been &cDisabled"
+  error: "%prefix% &cThe command you just executed does not exist"
+  reload: "%prefix% &aThe plugin folders were successfully reloaded"
+  nopermission: "%prefix% &cYou do not have permissions to run this command"
+  permission: "%prefix% &fYou need rank &e[Sxntido] &fto get flight mode, you can purchase it at &ahttps://github.com/aquaticstudios"
